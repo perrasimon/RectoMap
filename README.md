@@ -1,7 +1,8 @@
 <h1>
-  <img src="https://github.com/user-attachments/assets/9126b0d9-af0b-4141-8336-590c9a7b2f53/mri-icon.png" alt="MRI Icon" width="40"/>
+  <img src="https://github.com/user-attachments/assets/42afc94e-ce51-499b-9033-bb5b4864e886" alt="MRI Icon" width="40"/>
   Rectal Tumor and Mesorectum Segmentation in MRI
 </h1>
+
 
 This repository provides a deep learning model for the segmentation of **rectal cancer** and **mesorectum** from T2-weighted MRI images, using a [Swin-UMamba-based architecture].
 
