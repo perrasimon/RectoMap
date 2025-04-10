@@ -44,7 +44,7 @@ conda activate rectal_seg
 pip install -r requirements.txt
 
 # Run inference (example script)
-bash scripts/run_prediction.sh
+bash scripts/run_prediction.sh'''
 
 📊 Example Output
 <p align="center"> <img src="images/example_segmentation.png" alt="Example Segmentation" width="600"/> </p>
