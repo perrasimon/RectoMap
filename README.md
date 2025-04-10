@@ -1,5 +1,5 @@
-<h1>
-  <img src="https://github.com/user-attachments/assets/42afc94e-ce51-499b-9033-bb5b4864e886" alt="MRI Icon" width="50"/>
+<<h1 align="center">>
+  <img src="https://github.com/user-attachments/assets/42afc94e-ce51-499b-9033-bb5b4864e886" alt="Icon" width="50"/>
   Rectal Tumor and Mesorectum Segmentation in MRI
 </h1>
 
