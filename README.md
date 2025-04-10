@@ -1,5 +1,5 @@
 <h1>
-  <img src="[https://cdn-icons-png.flaticon.com/512/5048/5048368.png](https://github.com/user-attachments/assets/9126b0d9-af0b-4141-8336-590c9a7b2f53)" alt="MRI Icon" width="40"/>
+  <img src="[https://github.com/user-attachments/assets/9126b0d9-af0b-4141-8336-590c9a7b2f53]" alt="MRI Icon" width="40"/>
   Rectal Tumor and Mesorectum Segmentation in MRI
 </h1>
 
