@@ -45,3 +45,15 @@ pip install -r requirements.txt
 
 # Run inference (example script)
 bash scripts/run_prediction.sh
+
+📊 Example Output
+<p align="center"> <img src="images/example_segmentation.png" alt="Example Segmentation" width="600"/> </p>
+📎 Related Publications & Credits
+STAPLE reference: Warfield et al., Simultaneous Truth and Performance Level Estimation (STAPLE).
+
+nnUNet: Isensee et al., nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation.
+
+📬 Contact
+For questions or collaboration, feel free to reach out:
+Simone Perra – University of Cagliari
+📧 simone.perra@unica.it
