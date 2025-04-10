@@ -4,7 +4,21 @@
 </h1>
 
 
-This repository provides a deep learning model for the segmentation of **rectal cancer** and **mesorectum** from T2-weighted MRI images, using a [Swin-UMamba-based architecture].
+🔬 About This Repository
+This repository provides a deep learning pipeline for the segmentation of rectal cancer and mesorectum from T2-weighted MRI scans.
+The system integrates five different deep learning models:
+
+nnUNet
+
+uMambaBot
+
+Swin-UMamba (pretrained)
+
+Swin-UMamba (from scratch)
+
+Swin-UNETR
+
+The predictions from each model are combined using a STAPLE-based ensemble approach, enhancing the robustness and accuracy of the final segmentation.
 
 ## 🧪 Model Details
 - Framework: PyTorch + MONAI + nnUNet
