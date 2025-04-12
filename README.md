@@ -3,6 +3,8 @@
   Rectal Tumor and Mesorectum Segmentation in MRI
 </h1>
 
+![Video MRI Segmentazione](https://github.com/perrasimon/Rectal-cancer-and-mesorectum-segmentation/mri_segmentation_clip_high_quality.avi)
+
 ## 🔬 About This Repository
 
 This repository provides a deep learning pipeline for the segmentation of **rectal cancer** and **mesorectum** from **T2-weighted MRI scans**.
