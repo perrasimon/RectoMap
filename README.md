@@ -3,7 +3,9 @@
   Rectal Tumor and Mesorectum Segmentation in MRI
 </h1>
 
-![Video MRI Segmentazione](https://github.com/perrasimon/Rectal-cancer-and-mesorectum-segmentation/mri_segmentation_clip_high_quality.gif)
+<p align="center">
+  <img src="mri_segmentation_clip_high_quality.gif" width="40%" />
+</p>
 
 
 
