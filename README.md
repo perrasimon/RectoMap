@@ -1,7 +1,12 @@
 <h1>
-  <img src="https://github.com/user-attachments/assets/42afc94e-ce51-499b-9033-bb5b4864e886" alt="Icon" width="50"/>
-  Rectal Tumor and Mesorectum Segmentation in MRI
+  <img src="colon-cancer.png" alt="Icon" width="50"/>
+  RectoMap
 </h1>
+
+<h3 align="center">
+  From Pixels to Prognosis: Automatic MRI Segmentation of Rectal Tumors and Mesorectum  
+  for Smarter Radiomics and pCR Prediction
+</h3>
 
 <p align="center">
   <img src="animated_gif.gif" width="40%" />
