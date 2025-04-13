@@ -1,11 +1,9 @@
-<h1>
-  <img src="colon-cancer.png" alt="Icon" width="50"/>
-  RectoMap
+<h1 align='center'>
+  From pixels to prognosis: **RectoMap** offers a smart path from MRI scans to rectal cancer insights
 </h1>
 
 <h3 align="center">
-  From Pixels to Prognosis: Automatic MRI Segmentation of Rectal Tumors and Mesorectum  
-  for Smarter Radiomics and pCR Prediction
+  Deep learning-powered MRI segmentation of rectal cancer and mesorectum, enhancing radiomics for accurate pCR outcomes
 </h3>
 
 <p align="center">
