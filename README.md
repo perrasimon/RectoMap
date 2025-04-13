@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-  <img src="mri_segmentation_clip_high_quality.gif" width="40%" />
+  <img src="animated_gif.gif" width="40%" />
 </p>
 
 
