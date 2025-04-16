@@ -7,7 +7,7 @@
 </h3>
 
 <p align="center">
-  <img src="github_gif.gif" width="100%" />
+  <img src="github_gif (3).gif" width="100%" />
 </p>
 
 
