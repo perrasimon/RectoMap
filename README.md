@@ -26,6 +26,27 @@ To improve segmentation consistency and robustness across patients, the predicti
 
 ---
 
+## ⚙️ Environment Setup
+
+Create a Conda environment and install nnU-Net v2:
+
+```bash
+# Create conda environment
+conda create -n rectomap_env python=3.9 -y
+conda activate rectomap_env
+
+# Install PyTorch (adjust based on your CUDA version)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# Clone nnU-Net v2 and install
+git clone https://github.com/MIC-DKFZ/nnUNet.git
+cd nnUNet
+pip install -e .
+
+# Optional: Install additional requirements
+pip install medpy nibabel matplotlib
+```
+
 ## 🗂️ Repository Structure
 ├── models/ # Trained weights or model configs 
 ├── scripts/ # Inference and training scripts 
@@ -34,10 +55,33 @@ To improve segmentation consistency and robustness across patients, the predicti
 ├── README.md # You're here!
 
 ## 🧪 Model Details
-- Framework: PyTorch + MONAI + nnUNet
-- Trained on: [brief description of your dataset]
-- Targets: Label 1 = rectal tumor, Label 2 = mesorectum
+| Model ID         | Architecture  |
+| ---------------- | ------------- |
+| fold0    | nnUNet 3D    |
+| fold1 | UMambaBot 3D |
+| fold2   | nnUNet 3D    |
+| fold3   | nnUNet 3D    |
+| fold4   | nnUNet 3D    |
 
+Final predictions are computed using the STAPLE algorithm, which combines segmentations from multiple models.
+
+## Installation
+```bash
+#Download the five pretrained models
+wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold0_nnUNet.zip
+wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold1_UMambaBot.zip
+wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold2_nnUNet.zip
+wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold3_nnUNet.zip
+wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold4_nnUNet.zip
+
+#Install each model into your environment
+nnUNetv2_install_pretrained_model_from_zip fold0_nnUNet.zip
+nnUNetv2_install_pretrained_model_from_zip fold1_UMambaBot.zip
+nnUNetv2_install_pretrained_model_from_zip fold2_nnUNet.zip
+nnUNetv2_install_pretrained_model_from_zip fold3_nnUNet.zip
+nnUNetv2_install_pretrained_model_from_zip fold4_nnUNet.zip
+
+```
 ## 🚀 How to Run
 
 ```bash
