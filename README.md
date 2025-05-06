@@ -28,13 +28,14 @@ To improve segmentation consistency and robustness across patients, the predicti
 
 ## ⚙️ Environment Setup
 
-Create a Conda environment and install nnU-Net v2:
-
+Create a conda environment, clone the repository and install it:
 ```bash
-# Create conda environment
-conda create -n rectomap_env python=3.9 -y
-conda activate rectomap_env
+# Create and activate a conda environment
+conda create -n RectoMap_env python=3.9 -y
+conda activate RectoMap_env
 
+# clone the repository
+```
 # Install PyTorch (adjust based on your CUDA version)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
