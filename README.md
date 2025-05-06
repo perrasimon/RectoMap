@@ -69,11 +69,11 @@ mv nnUnetTrainer_AUG_3d.py nnUNetTrainerUMambaBot_AUG_3d.py RectoMap/src/nnunetv
 ## Model weights download
 ```bash
 #Download the five pretrained models
-wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold0_nnUNet.zip
-wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold1_UMambaBot.zip
-wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold2_nnUNet.zip
-wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold3_nnUNet.zip
-wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold4_nnUNet.zip
+wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold0_nnUNet.zip
+wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold1_UMambaBot.zip
+wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold2_nnUNet.zip
+wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold3_nnUNet.zip
+wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold4_nnUNet.zip
 
 #Install each model into your environment
 nnUNetv2_install_pretrained_model_from_zip fold0_nnUNet.zip
