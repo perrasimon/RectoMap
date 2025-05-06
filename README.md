@@ -59,9 +59,14 @@ cd RectoMap
 pip install -r requirements.txt
 ```
 
+Once the environment is set up and dependencies are installed, you can add your custom trainers:
+```bash
+# Move your custom trainer files to the appropriate directory:
+cd custom_trainers
+mv nnUnetTrainer_AUG_3d.py nnUNetTrainerUMambaBot_AUG_3d.py RectoMap/src/nnunetv2/umamba/nnunetv2/training/nnUNetTrainer/
+```
 
-
-## Installation
+## Model weights download
 ```bash
 #Download the five pretrained models
 wget https://github.com/perrasimon/RectoMap/releases/download/v1.0/fold0_nnUNet.zip
