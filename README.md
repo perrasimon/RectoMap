@@ -63,7 +63,7 @@ Once the environment is set up and dependencies are installed, you can add your 
 ```bash
 # Move your custom trainer files to the appropriate directory:
 cd custom_trainers
-mv nnUnetTrainer_AUG_3d.py nnUNetTrainerUMambaBot_AUG_3d.py RectoMap/src/nnunetv2/umamba/nnunetv2/training/nnUNetTrainer/
+cp nnUNetTrainer_AUG_3d.py nnUNetTrainerUMambaBot_AUG_3d.py RectoMap/src/nnunetv2/umamba/nnunetv2/training/nnUNetTrainer/
 ```
 
 ## Model weights download
