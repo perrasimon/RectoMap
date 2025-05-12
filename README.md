@@ -13,7 +13,7 @@
 
 ## 🔬 About this repository
 
-This repository provides a deep learning pipeline for the segmentation of rectal cancer and mesorectum from T2-weighted MRI scans. The second part of the pipeline, focused on predicting pathological complete response (pCR) after neoadjuvant therapy, will be released soon!
+This repository provides a deep learning pipeline for the segmentation of rectal cancer and mesorectum from T2-weighted MRI scans. The second part of the pipeline, focused on predicting **pathological complete response** (pCR) after neoadjuvant therapy, will be **released soon**! 
 
 We trained and evaluated **two state-of-the-art models** for medical image segmentation:
 
