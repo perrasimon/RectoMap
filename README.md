@@ -25,39 +25,17 @@ The models were trained on a highly diverse dataset, which includes subjects sca
 The table below provides an overview of the models used in the RectoMap pipeline. Each model corresponds to a specific fold in the 5-fold cross-validation approach used during training.
 
 <div align="center">
-
-<table>
-  <thead>
-    <tr>
-      <th>Model ID</th>
-      <th>Architecture</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fold0</td>
-      <td>nnUNet 3D</td>
-    </tr>
-    <tr>
-      <td>fold1</td>
-      <td>UMambaBot 3D</td>
-    </tr>
-    <tr>
-      <td>fold2</td>
-      <td>nnUNet 3D</td>
-    </tr>
-    <tr>
-      <td>fold3</td>
-      <td>nnUNet 3D</td>
-    </tr>
-    <tr>
-      <td>fold4</td>
-      <td>nnUNet 3D</td>
-    </tr>
-  </tbody>
-</table>
+  
+| Model ID | Architecture  | Training Time | Best Dice (val) | Training Epochs |
+|:----------:|:---------------:|:--------------:|:------------------:|:------------------:|
+| fold0    | nnUNet 3D     | 23:33:55     | 0.6940             | 1000             | 
+| fold1    | UMambaBot 3D  | 1-07:47:56   | 0.6853             | 1000             | 
+| fold2    | nnUNet 3D     | 21:19:49     | 0.7453             | 1000             | 
+| fold3    | nnUNet 3D     | 1-00:18:10   | 0.7364             | 1000             | 
+| fold4    | nnUNet 3D     | 1-00:15:19   | 0.6627             | 1000             | 
 
 </div>
+
 
 
 ## ⚙️ Environment Setup
@@ -82,6 +60,7 @@ Once the environment is set up and dependencies are installed, you can add the c
 cd custom_trainers
 cp nnUNetTrainer_AUG_3d.py nnUNetTrainerUMambaBot_AUG_3d.py RectoMap/src/nnunetv2/umamba/nnunetv2/training/nnUNetTrainer/
 ```
+These custom trainers extend the default nnUNet training routines to include advanced **data augmentation** strategies. In particular, they incorporate [**TorchIO**](https://torchio.readthedocs.io/) and [**GIN**](https://github.com/cheng-01037/Causality-Medical-Image-Domain-Generalization)-based transforms designed to simulate realistic **MRI artifacts** (e.g., motion, ghosting, bias field).
 
 ## 📥 Model weights download
 ```bash
