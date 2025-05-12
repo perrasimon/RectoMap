@@ -2,9 +2,8 @@
   From pixels to prognosis: RectoMap offers a smart path from MRI scans to rectal cancer insights
 </h1>
 
-<h3 align="center">
-  Deep learning-powered MRI segmentation of rectal cancer and mesorectum, enhancing radiomics for accurate pCR outcomes
-</h3>
+<p align="center">
+RectoMap provides a powerful deep learning-based pipeline for rectal cancer segmentation and mesorectum delineation from T2-weighted MRI scans, enabling more accurate and reliable tumor analysis. By combining state-of-the-art models and ensemble techniques, RectoMap offers a robust solution to clinical challenges in cancer treatment planning and monitoring.
 
 <p align="center">
   <img src="github_gif (3).gif" width="100%" />
@@ -66,7 +65,7 @@ cd custom_trainers
 cp nnUNetTrainer_AUG_3d.py nnUNetTrainerUMambaBot_AUG_3d.py RectoMap/src/nnunetv2/umamba/nnunetv2/training/nnUNetTrainer/
 ```
 
-## Model weights download
+## 📥 Model weights download
 ```bash
 #Download the five pretrained models
 wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold0_nnUNet.zip
@@ -101,13 +100,8 @@ Please make sure that:
 - ```-o```: path to the **output folder** where predictions and the ensembled results will be saved.
 
 
+## 🙏 Acknowledgments
+This work is heavily based on the [nnUNet](https://github.com/MIC-DKFZ/nnUNet) and [U-Mamba](https://github.com/bowang-lab/U-Mamba) frameworks.
+If you use this tool in your research, please make sure to **cite** the original authors by referencing them.
 
-## 📎 Related Publications & Credits
-STAPLE reference: Warfield et al., Simultaneous Truth and Performance Level Estimation (STAPLE).
 
-nnUNet: Isensee et al., nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation.
-
-## 📬 Contact
-For questions or collaboration, feel free to reach out:
-Simone Perra – University of Padova
-📧 simone.perra@unipd.it
