@@ -45,7 +45,7 @@ Final predictions are computed using the STAPLE algorithm, which combines segmen
 
 ## ⚙️ Environment Setup
 
-Create a conda environment, clone the repository and install it:
+Create a conda environment, clone the repository and install the dependencies:
 ```bash
 # Create and activate a conda environment
 conda create -n RectoMap_env python=3.9 -y
@@ -83,24 +83,24 @@ nnUNetv2_install_pretrained_model_from_zip fold3_nnUNet.zip
 nnUNetv2_install_pretrained_model_from_zip fold4_nnUNet.zip
 
 ```
+
 ## 🚀 How to Run
+To run predictions using all 5 pretrained models and automatically perform ensembling, use the following command:
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-username/rectal-mri-segmentation.git
-cd rectal-mri-segmentation
-
-# Set up environment (example with conda)
-conda create -n rectal_seg python=3.9
-conda activate rectal_seg
-pip install -r requirements.txt
-
-# Run inference (example script)
-bash scripts/run_prediction.sh
+RectoMap_run.sh -i /path/to/input/images -o /path/to/output/folder
 ```
 
-## 📊 Example Output
-<p align="center"> <img src="images/example_segmentation.png" alt="Example Segmentation" width="600"/> </p>
+This script will automatically create **6 output subdirectories** inside the specified output folder:
+- ```predictions_fold0``` to ```predictions_fold4```: contain predictions from each individual model.
+- ```RectoMap_ouput```: contains the final ensembled segmentation masks generated using the STAPLE algorithm.
+
+Please make sure that:
+
+- ```-i```: path to the **input folder** containing the MRI images to be predicted. The images must be in NIfTI format with a .nii.gz extension.
+- ```-o```: path to the **output folder** where predictions and the ensembled results will be saved.
+
+
 
 ## 📎 Related Publications & Credits
 STAPLE reference: Warfield et al., Simultaneous Truth and Performance Level Estimation (STAPLE).
