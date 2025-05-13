@@ -6,7 +6,7 @@
 <strong>RectoMap</strong> provides a powerful deep learning-based pipeline for <strong>rectal cancer</strong> segmentation and <strong>mesorectum</strong> delineation from T2-weighted MRI scans, enabling more accurate and reliable tumor analysis. By combining state-of-the-art models and ensemble techniques, RectoMap offers a robust solution to clinical challenges in cancer treatment planning and monitoring.
 
 <p align="center">
-  <img src="github_gif (3).gif" width="100%" />
+  <img src="RectoMap_pipeline.gif" width="100%" />
 </p>
 
 
