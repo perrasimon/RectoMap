@@ -32,7 +32,7 @@ for i in {0..4}; do
     
     # Use different trainer for fold 1
     if [ "$i" -eq 1 ]; then
-        TRAINER="nnUNetTrainer_UMambaBot_AUG_3d"
+        TRAINER="nnUNetTrainerUMambaBot_AUG_3d"
     else
         TRAINER="nnUNetTrainer_AUG_3d"
     fi
