@@ -64,27 +64,18 @@ These custom trainers extend the default nnUNet training routines to include adv
 
 ## 📥 Model weights download
 ```bash
-#Download the five pretrained models
-wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold0_nnUNet.zip
-wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold1_UMambaBot.zip
-wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold2_nnUNet.zip
-wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold3_nnUNet.zip
-wget https://github.com/perrasimon/RectoMap/releases/tag/v1.0.0/fold4_nnUNet.zip
-
-#Install each model into your environment
-nnUNetv2_install_pretrained_model_from_zip fold0_nnUNet.zip
-nnUNetv2_install_pretrained_model_from_zip fold1_UMambaBot.zip
-nnUNetv2_install_pretrained_model_from_zip fold2_nnUNet.zip
-nnUNetv2_install_pretrained_model_from_zip fold3_nnUNet.zip
-nnUNetv2_install_pretrained_model_from_zip fold4_nnUNet.zip
-
+#Download the five pretrained models and install them into your environment
+for i in {0..4}; do
+  wget https://github.com/perrasimon/RectoMap/releases/download/v1.0.0/fold$i.zip
+  nnUNetv2_install_pretrained_model_from_zip fold$i.zip
+done
 ```
 
 ## 🚀 How to Run
 To run predictions using all 5 pretrained models and automatically perform ensembling, use the following command:
 
 ```bash
-RectoMap_run.sh -i /path/to/input/images -o /path/to/output/folder
+RectoMap_run.sh -i /path/to/input/images/folder -o /path/to/output/folder
 ```
 
 This script will automatically create **6 output subdirectories** inside the specified output folder:
