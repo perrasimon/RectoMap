@@ -75,7 +75,7 @@ done
 To run predictions using all 5 pretrained models and automatically perform ensembling, use the following command:
 
 ```bash
-RectoMap_run.sh -i /path/to/input/images/folder -o /path/to/output/folder
+bash RectoMap_run.sh -i /path/to/input/images/folder -o /path/to/output/folder
 ```
 
 This script will automatically create **6 output subdirectories** inside the specified output folder:
