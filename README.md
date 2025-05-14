@@ -64,7 +64,7 @@ These custom trainers extend the default nnUNet training routines to include adv
 
 ## 📥 Model weights download
 ```bash
-#Download the five pretrained models and install them into your environment
+# Download the five pretrained models and install them into your environment
 for i in {0..4}; do
   wget https://github.com/perrasimon/RectoMap/releases/download/v1.0.0/fold$i.zip
   nnUNetv2_install_pretrained_model_from_zip fold$i.zip
